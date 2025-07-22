@@ -20,7 +20,8 @@ with st.form("form_normalitas"):
             st.success(f"Normalitas larutan: *{normalitas:.4f} N*")
         except Exception as e:
             st.error("Terjadi kesalahan saat menghitung. Pastikan input valid.")
-            def tentang():
+            
+def tentang():
     st.markdown(
         f"""
         <style>
