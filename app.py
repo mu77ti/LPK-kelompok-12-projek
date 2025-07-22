@@ -20,3 +20,28 @@ with st.form("form_normalitas"):
             st.success(f"Normalitas larutan: *{normalitas:.4f} N*")
         except Exception as e:
             st.error("Terjadi kesalahan saat menghitung. Pastikan input valid.")
+            def tentang():
+    st.markdown(
+        f"""
+        <style>
+            .blurimg {{
+                background-image: url("https://github.com/mu77ti/LPK-kelompok-12-projek/blob/main/Logo%20Pecinta%20Alam%20dan%20Petualangan%20Retro%20Krem%20dan%20Merah.png");
+                background-size: cover;
+                position: fixed;
+                inset: 0;
+                filter: blur(4px);
+                background-color: rgba(0, 0, 0, 0.8); /* Transparent black overlay */
+            }}
+        </style>
+        <div class="blurimg"></div>
+        """,
+        unsafe_allow_html=True
+    )
+    st.title("Tentang Website")
+    st.markdown(
+    f"""
+    <style>
+        p {{
+            font-size: 18px;
+            color: white;
+        }}
